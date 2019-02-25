@@ -1,0 +1,59 @@
+<html>
+<head>
+<title> Javascript Calculator </title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<script language="Javascript">
+
+function tambah()
+{var bil1 = parseFloat(document.fform.nil1.value);
+var bil2 = parseFloat(document.fform.nil2.value);
+var hasil= bil1 + bil2;
+document.fform.hasil.value= hasil;}
+
+function kurang()
+{var bil1 = parseFloat(document.fform.nil1.value);
+var bil2 = parseFloat(document.fform.nil2.value);
+var hasil = bil1 - bil2;
+document.fform.hasil.value= hasil;}
+
+function bagi()
+{var bil1 = parseFloat(document.fform.nil1.value);
+var bil2 = parseFloat(document.fform.nil2.value);
+var hasil= bil1 / bil2;
+document.fform.hasil.value= hasil;}
+
+function kali()
+{var bil1 = parseFloat(document.fform.nil1.value);
+var bil2 = parseFloat(document.fform.nil2.value);
+var hasil= bil1 * bil2;
+document.fform.hasil.value= hasil;}
+
+
+</script>
+
+<h1 style = "text-align:center;color:blue">Calculator</h1>
+<form name = "fform">
+	
+<center>
+<table>
+<tr><td></td><td><input type = "text" name = "nil1"/></td></tr>
+<tr><td></td><td><input type = "text" name = "nil2"/></td></tr>
+<tr>
+  <td colspan="2" align="center">
+<input type = "button" value = "+" onClick = "tambah()"/>
+<input type = "button" value = "-" onClick = "kurang()"/>
+<input type = "button" value = ":" onClick = "bagi()"/>
+<input type = "button" value = "X" onClick = "kali()"/>
+
+
+</td></tr>
+<tr><td>=</td><td><input type = "text" name = "hasil" value=""/></td></tr>
+</table><br/>
+
+
+</center>
+</form>
+</body>
+</html>
